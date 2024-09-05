@@ -1,11 +1,18 @@
-# Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
+# live preview
+"[**Live Demo**](https://havel-eta.vercel.app)"
+# <img src="https://img.icons8.com/color/344/discord.png" width="40" alt="Fullstack Discord Clone"> Fullstack Discord like app
 
-![Copy of Copy of Copy of Fullstack Twitter Clone (5)](https://github.com/AntonioErdeljac/next13-discord-clone/assets/23248726/14e25e4f-eb83-44dd-8b97-4f2666b89386)
+## Project Overview
 
+A comprehensive guide to building a full-fledged Discord clone using Next.js 13, React, Socket.io, Prisma, Tailwind, and postgreSQL.
 
-This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
+## Features
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
+* <img src="https://img.icons8.com/color/344/chat.png" width="20" alt="Chat"> Real-time messaging using Socket.io
+* <img src=""> Send attachments as messages using UploadThing
+* <img src="https://img.icons8.com/color/344/edit.png" width="20" alt="Edit"> Delete & Edit messages in real time for all users
+
+VIDEO TUTORIAL](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
 
 Features:
 
@@ -27,48 +34,50 @@ Features:
 - MySQL database using Planetscale
 - Authentication with Clerk
 
-### Prerequisites
+## Tech Stack
 
-**Node version 18.x.x**
+* Next.js 13
+* React
+* Socket.io
+* Prisma
+* Tailwind
+* postgresql
+  
 
-### Cloning the repository
+## Prerequisites
 
-```shell
+* Node version 18.x.x
+
+## Getting Started
+
+```bash
 git clone https://github.com/AntonioErdeljac/next13-discord-clone.git
 ```
-
-### Install packages
-
 ```shell
-npm i
+npm install
 ```
+Setup .env file
 
-### Setup .env file
+Create a new file named .env in the root directory and add the following variables:
+Makefile
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
+CLERK_SECRET_KEY=your_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=your_sign_in_url
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=your_sign_up_url
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=your_after_sign_in_url
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=your_after_sign_up_url
 
+DATABASE_URL=your_database_url
 
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+UPLOADTHING_SECRET=your_uploadthing_secret
+UPLOADTHING_APP_ID=your_uploadthing_app_id
 
-
-DATABASE_URL=
-
-UPLOADTHING_SECRET=
-UPLOADTHING_APP_ID=
-
-LIVEKIT_API_KEY=
-LIVEKIT_API_SECRET=
-NEXT_PUBLIC_LIVEKIT_URL=
+LIVEKIT_API_KEY=your_livekit_api_key
+LIVEKIT_API_SECRET=your_livekit_api_secret
+NEXT_PUBLIC_LIVEKIT_URL=your_livekit_url
 ```
-
-### Setup Prisma
-
-Add MySQL Database (I used PlanetScale)
-
+Add MySQL Database (NEON.TECH)
 ```shell
 npx prisma generate
 npx prisma db push
@@ -80,7 +89,6 @@ npx prisma db push
 ```shell
 npm run dev
 ```
-
 ## Available commands
 
 Running commands with npm `npm run [command]`
@@ -88,4 +96,5 @@ Running commands with npm `npm run [command]`
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
 | `dev`           | Starts a development instance of the app |
-# discord-clone
+
+# discord-typescript
